@@ -53,9 +53,9 @@ public class Database  extends SQLiteOpenHelper {
         long resultValue = db.insert(tableName,null,cv);
 
         if (resultValue == -1){
-            Toast.makeText(context, "Data Not Added.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Datos no añadidos.", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Data Added Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Datos añadidos correctamente", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -75,8 +75,8 @@ public class Database  extends SQLiteOpenHelper {
         SQLiteDatabase database = this.getWritableDatabase();
         String query = "DELETE FROM "+ tableName;
         database.execSQL(query);
-
     }
+
 
     void updateNotes(String title,String desc , String id){
         SQLiteDatabase database =  this.getWritableDatabase();
@@ -86,19 +86,19 @@ public class Database  extends SQLiteOpenHelper {
 
         long resut  = database.update(tableName,contentValues,"id=?",new String[]{id});
         if (resut == -1){
-            Toast.makeText(context, "Failed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Fallido", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Done!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Exitoso!", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public  void  deleteSingleItem(String id){
+    public void deleteSingleItem(String id){
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(tableName,"id=?", new String[]{id});
         if (result == -1){
-            Toast.makeText(context, "Item Not Deleted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "No se pudo borrar", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Item Deleted Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Borrado exitosamente", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -36,7 +36,7 @@ public class AddNotesActivity extends AppCompatActivity {
                     finish();
 
                 } else {
-                    Toast.makeText(AddNotesActivity.this, "Both Fields Required.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddNotesActivity.this, "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
                 }
             }
         });

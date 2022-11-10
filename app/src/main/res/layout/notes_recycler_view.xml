@@ -9,35 +9,35 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="#DE3716"
         app:cardCornerRadius="10dp"
         app:cardElevation="3dp">
 
         <RelativeLayout
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
             <TextView
+                android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
                 android:text="This is title"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:layout_margin="6dp"
                 android:textSize="18sp"
-                android:id="@+id/title">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
             <TextView
+                android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="This is Description"
                 android:layout_below="@+id/title"
-                android:textColor="@color/black"
                 android:layout_margin="6dp"
-                android:textSize="18sp"
-                android:id="@+id/description">
-            </TextView>
+                android:text="This is Description"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

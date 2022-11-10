@@ -32,9 +32,15 @@
         android:id="@+id/update_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textSize="18sp"
-        android:background="@drawable/custom_button"
         android:layout_alignParentBottom="true"
-        android:text="Update Note" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#67c100"
+        android:text="ACTUALIZAR NOTA"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 </RelativeLayout>

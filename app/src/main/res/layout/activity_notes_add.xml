@@ -12,28 +12,50 @@
         android:id="@+id/title_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:color="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:ems="10"
-        android:layout_margin="8dp"
-        android:inputType="textPersonName"
-        android:hint="Enter Title" />
+        android:hint="Titulo"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/description_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_margin="8dp"
         android:layout_below="@id/title_edit"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:color="@color/black"
+        android:ems="10"
+        android:hint="Descripción"
         android:inputType="textPersonName"
-        android:hint="Enter Description" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/add_note"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textSize="18sp"
-        android:background="@drawable/custom_button"
         android:layout_alignParentBottom="true"
-        android:text="Add Note" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#67c100"
+        android:text="Guardar NOTA"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 </RelativeLayout>

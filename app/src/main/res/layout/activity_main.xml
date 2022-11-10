@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#000000"
+    android:background="#000"
     app:layout_behavior="@string/fab_transformation_scrim_behavior"
     android:layout_height="match_parent"
     android:id="@+id/layout_main"
@@ -20,19 +20,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:backgroundTint="#FFEB3B"
-        android:layout_gravity="bottom|end"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/add" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_id"
@@ -42,5 +30,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fab"
+        android:layout_width="93dp"
+        android:layout_height="91dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="620dp"
+        app:srcCompat="@drawable/adda" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
